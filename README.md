@@ -8,6 +8,8 @@ Figma Product Design Director guides Figma AI through the full design reasoning 
 
 The skill is designed for applications, dashboards, websites, developer tools, creative workspaces, and brand-led product surfaces. It emphasizes reference fidelity, strong information hierarchy, premium restraint, product authenticity, and deliberate avoidance of generic template aesthetics.
 
+This repository contains a Figma AI Skill that helps AI agents create polished product interfaces, visual systems, and scalable design systems.
+
 ## Design capabilities
 
 - UI, UX, visual identity, and brand direction
@@ -23,6 +25,10 @@ The skill is designed for applications, dashboards, websites, developer tools, c
 ## Use
 
 Use the complete [`SKILL.md`](SKILL.md) wherever your Figma AI Custom Skill setup accepts skill instructions. The file is self-contained. Preserve its heading structure and content so the skill remains in Figma Custom Skill format.
+
+## Figma Community
+
+This skill has been published as a Figma Custom Skill for use with Figma AI.
 
 ## Project files
 
