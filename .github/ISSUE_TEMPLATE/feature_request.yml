@@ -1,0 +1,48 @@
+name: Feature request
+description: Propose a focused addition to the Skill instructions, examples, or documentation.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Product-design problem
+      description: Describe the real workflow gap before proposing a solution.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Suggested scope
+      options:
+        - Skill instructions
+        - Copyable example
+        - Documentation
+        - Launch or contribution material
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Reproduction context or example
+      description: Explain where the current Skill is insufficient using sanitized, shareable material.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Smallest useful change
+      description: Describe the narrowest instruction or documentation change that would address the gap.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks or over-constraint
+      description: Note where the proposal could reduce flexibility, conflict with references, or expand the Skill beyond product design.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Data-safety confirmation
+      options:
+        - label: I removed private product data, credentials, personal data, and unauthorized assets.
+          required: true

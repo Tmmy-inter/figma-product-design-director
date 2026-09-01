@@ -1,0 +1,79 @@
+name: Instruction or execution problem
+description: Report a reproducible Skill, Figma agent execution, or documentation problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Remove private product data, credentials, customer information, and confidential references before submitting.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Problem area
+      description: Choose the layer where the problem appears.
+      options:
+        - Skill instruction problem
+        - Figma agent execution problem
+        - Documentation problem
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: What did you ask the agent to do?
+      description: Paste a sanitized prompt or concise task description.
+      placeholder: Describe the product task, intended surface, and requested result.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant input or reference
+      description: Describe sanitized content, frames, brand references, constraints, or states supplied to the agent.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: State which instruction or documented behavior you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Describe what happened, including any missing states or error message.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Figma environment
+      description: Include Figma surface, date, model if shown, and relevant access level; omit account identifiers.
+      placeholder: Figma Design or Figma Make; date; model if visible
+    validations:
+      required: true
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Is the issue reproducible?
+      options:
+        - Yes, every time
+        - Sometimes
+        - Not reproduced yet
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized screenshot or example
+      description: Attach only material you are authorized to share. Include the relevant state and redact private data.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Data-safety confirmation
+      options:
+        - label: I removed private product data, credentials, personal data, and unauthorized assets.
+          required: true

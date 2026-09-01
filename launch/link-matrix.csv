@@ -1,0 +1,7 @@
+channel,campaign,source,medium,target,final_url,status,owner,publish_date
+figma-community,community-listing,figma-community,community,"{{GITHUB_REPOSITORY_URL}}","{{GITHUB_REPOSITORY_URL}}?utm_source=figma-community&utm_medium=community&utm_campaign=community-listing",draft,,
+figma-forum,method-discussion,figma-forum,forum,"{{FIGMA_COMMUNITY_URL}}","{{FIGMA_COMMUNITY_URL}}?utm_source=figma-forum&utm_medium=forum&utm_campaign=method-discussion",blocked,,
+reddit,case-study,reddit,community,"{{CASE_STUDY_URL}}","{{CASE_STUDY_URL}}?utm_source=reddit&utm_medium=community&utm_campaign=case-study",blocked,,
+linkedin,launch-context,linkedin,social,"{{GITHUB_REPOSITORY_URL}}","{{GITHUB_REPOSITORY_URL}}?utm_source=linkedin&utm_medium=social&utm_campaign=launch-context",draft,,
+x,launch-thread,x,social,"{{GITHUB_REPOSITORY_URL}}","{{GITHUB_REPOSITORY_URL}}?utm_source=x&utm_medium=social&utm_campaign=launch-thread",draft,,
+product-hunt,launch,product-hunt,launch-platform,"{{FIGMA_COMMUNITY_URL}}","{{FIGMA_COMMUNITY_URL}}?utm_source=product-hunt&utm_medium=launch-platform&utm_campaign=launch",blocked,,

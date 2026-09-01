@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Product Design Director cover</title>
+  <desc id="desc">Cover graphic for a structured product-design Custom Skill.</desc>
+  <style>
+    .sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .ink { fill: #171A1F; } .muted { fill: #545D68; }
+    .line { stroke: #C8CDD3; stroke-width: 3; fill: none; }
+  </style>
+  <rect width="1920" height="1080" fill="#F6F3EC"/>
+  <rect x="112" y="96" width="12" height="888" fill="#B83A2D"/>
+  <text x="170" y="148" class="mono muted" font-size="24" font-weight="700" letter-spacing="3">OPEN-SOURCE CUSTOM SKILL / 01</text>
+  <text x="170" y="342" class="sans ink" font-size="112" font-weight="760" letter-spacing="-5">Product Design</text>
+  <text x="170" y="462" class="sans ink" font-size="112" font-weight="760" letter-spacing="-5">Director</text>
+  <text x="176" y="548" class="sans muted" font-size="42">Structured product-design direction for</text>
+  <text x="176" y="606" class="sans muted" font-size="42">AI-assisted interface work.</text>
+  <line x1="170" y1="710" x2="922" y2="710" class="line"/>
+  <text x="170" y="770" class="mono ink" font-size="26">HIERARCHY  /  LAYOUT  /  STATES  /  CRITIQUE</text>
+  <text x="170" y="934" class="sans muted" font-size="26">For the Figma agent and Figma Make · Direction, not deterministic output</text>
+
+  <g transform="translate(1160 156)">
+    <text x="0" y="0" class="mono muted" font-size="22">DESIGN DECISION TRACE</text>
+    <line x1="44" y1="86" x2="44" y2="686" class="line"/>
+    <g class="sans" font-size="24" font-weight="700">
+      <circle cx="44" cy="86" r="30" fill="#B83A2D"/><text x="35" y="95" fill="#FFFFFF">1</text>
+      <circle cx="44" cy="236" r="30" fill="#F6F3EC" stroke="#171A1F" stroke-width="3"/><text x="35" y="245" class="ink">2</text>
+      <circle cx="44" cy="386" r="30" fill="#F6F3EC" stroke="#171A1F" stroke-width="3"/><text x="35" y="395" class="ink">3</text>
+      <circle cx="44" cy="536" r="30" fill="#F6F3EC" stroke="#171A1F" stroke-width="3"/><text x="35" y="545" class="ink">4</text>
+      <circle cx="44" cy="686" r="30" fill="#F6F3EC" stroke="#171A1F" stroke-width="3"/><text x="35" y="695" class="ink">5</text>
+    </g>
+    <g class="sans ink" font-size="38" font-weight="650">
+      <text x="112" y="99">Context</text><text x="112" y="249">Planner</text><text x="112" y="399">Designer</text><text x="112" y="549">Critic</text><text x="112" y="699">Revision</text>
+    </g>
+    <g class="sans muted" font-size="24">
+      <text x="112" y="137">Purpose before pattern</text><text x="112" y="287">Hierarchy before styling</text><text x="112" y="437">System before one-offs</text><text x="112" y="587">Impact before preference</text><text x="112" y="737">Re-review the whole flow</text>
+    </g>
+  </g>
+</svg>
