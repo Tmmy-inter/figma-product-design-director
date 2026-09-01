@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
   <title id="title">Product Design Director quick start</title>
-  <desc id="desc">Four documented, platform-aligned steps for uploading and invoking the standalone skill; live verification remains pending.</desc>
+  <desc id="desc">Four documented, platform-aligned steps for uploading and invoking the standalone skill; runtime verification was recorded on 2026-09-01.</desc>
   <style>
     .sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
@@ -31,10 +31,10 @@
   </g>
 
   <rect x="1350" y="420" width="458" height="310" fill="none" stroke="#171A1F" stroke-width="3"/>
-  <text x="1394" y="478" class="mono" fill="#B83A2D" font-size="22">LIVE TEST GATE</text>
-  <text x="1394" y="546" class="sans ink" font-size="34" font-weight="680">Import evidence pending</text>
-  <text x="1394" y="606" class="sans muted" font-size="25">Record the Figma surface,</text>
-  <text x="1394" y="646" class="sans muted" font-size="25">date, command shown, output,</text>
-  <text x="1394" y="686" class="sans muted" font-size="25">failures, and human corrections.</text>
-  <text x="112" y="1010" class="sans muted" font-size="26">Current Figma UI and access requirements must be confirmed during the live import test.</text>
+  <text x="1394" y="478" class="mono" fill="#B83A2D" font-size="22">RUNTIME EVIDENCE</text>
+  <text x="1394" y="546" class="sans ink" font-size="34" font-weight="680">Verified on 2026-09-01</text>
+  <text x="1394" y="606" class="sans muted" font-size="25">In-place migration, exact command,</text>
+  <text x="1394" y="646" class="sans muted" font-size="25">minimum invocation, and failures</text>
+  <text x="1394" y="686" class="sans muted" font-size="25">recorded with sanitized evidence.</text>
+  <text x="112" y="1010" class="sans muted" font-size="26">Current Figma UI, access, and runtime behavior can change; human review remains required.</text>
 </svg>

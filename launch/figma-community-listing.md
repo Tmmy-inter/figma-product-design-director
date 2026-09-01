@@ -1,10 +1,10 @@
 # Figma Community listing source
 
-> **SOURCE DRAFT — DO NOT PUBLISH YET.** Community URL, publisher identity, live import test, final screenshots, and support destination are unresolved.
+> **IN-PLACE UPDATE SOURCE — DO NOT PUBLISH YET.** The existing canonical listing is `https://www.figma.com/community/skill/77880/figma-product-design-director`. Runtime migration and invocation are verified, but the public page still contains the prior version and the final publication action (`Publish` in the observed UI) remains human-gated.
 
 ## Product name
 
-Product Design Director
+product-design-director
 
 ## Tagline options
 
@@ -53,7 +53,8 @@ Source: `{{GITHUB_REPOSITORY_URL}}`
 - The skill cannot replace product research, brand approval, technical feasibility review, or release acceptance.
 - Accessibility direction is not an accessibility guarantee or compliance certification.
 - Figma uploads one standalone Markdown skill; repository examples and assets remain separate.
-- No adoption metric, user validation, before/after result, or testimonial is claimed in this listing source.
+- One non-deterministic controlled example is included. It is not statistical validation, user validation, or strict causal proof.
+- No adoption metric, testimonial, or accessibility conformance result is claimed in this listing source.
 
 ## Suggested tags
 
@@ -63,25 +64,27 @@ Retain only tags offered by the current Community publishing interface.
 
 ## Support / feedback text
 
-Try it on one real, sanitized interface and report where the instructions fail, become too restrictive, miss an important state, or conflict with an authoritative reference: `{{SUPPORT_URL}}`
+Try it on one real, sanitized interface and report where the instructions fail, become too restrictive, miss an important state, or conflict with an authoritative reference: `https://github.com/Tmmy-inter/figma-product-design-director/issues`
 
 ## Image order
 
-1. `community-01-cover.svg`
-2. `community-02-problem.svg`
-3. `community-03-workflow.svg`
-4. `community-04-capabilities.svg`
-5. `community-05-quick-start.svg`
-6. `community-06-critique.svg`
+1. `community-01-cover.png`
+2. `community-02-problem.png`
+3. `community-03-workflow.png`
+4. `community-04-capabilities.png`
+5. `community-05-quick-start.png`
+6. `community-06-critique.png`
+7. `community-07-before-after.png`
 
 ## Pre-publication checklist
 
-- [ ] Verify `{{FIGMA_COMMUNITY_URL}}`, publisher identity, and support destination.
-- [ ] Upload `SKILL.md` in the current Figma flow and record the actual command shown.
-- [ ] Run at least one representative prompt and retain failures, corrections, environment, and date.
-- [ ] Confirm the Community title, short description, tags, image limits, and content rules in the live interface.
-- [ ] Export and visually inspect all six images at 1920 × 1080.
-- [ ] Check contrast, crop safety, text wrapping, spelling, and the independent-project disclaimer.
-- [ ] Confirm no image implies a generated interface result.
+- [x] Verify the existing Community URL, publisher identity, and support destination proposal.
+- [x] Save the repository `SKILL.md` instructions in place to the existing personal canonical skill and export the result.
+- [x] Record the actual `/figma-product-design-director` command and a successful minimum invocation.
+- [x] Run one controlled paired prompt and retain first-completed outputs, failures, corrections, environment, and date.
+- [x] Confirm the Community title, tagline, description, category, tags, image slots, and support field in the live update interface.
+- [x] Export all seven images at 1920 × 1080 and inspect the controlled-comparison derivative.
+- [x] Check the prepared gallery's crop safety, text wrapping, spelling, and controlled-example disclaimer in the live preview.
+- [x] Mark the generated-interface comparison as an observed example rather than statistical validation.
 - [ ] Resolve variables and test every link while signed out.
 - [ ] Obtain explicit authorization for the publisher account and publication action.

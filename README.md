@@ -2,9 +2,9 @@
 
 An open-source Custom Skill for structured product-design direction in Figma: visual systems, hierarchy, task-led layout, component states, responsive behavior, interaction, motion, accessibility review, and critique.
 
-[Read the Skill](SKILL.md) · [Explore copyable examples](examples/README.md) · [Review current limitations](#current-limitations)
+[Read the Skill](SKILL.md) · [Explore copyable examples](examples/README.md) · [Review the controlled case study](examples/case-study-01-support-operations-workspace.md) · [Review current limitations](#current-limitations)
 
-> **Community release pending.** No public Figma Community URL has been verified for this repository.
+> **Existing Community update pending.** Runtime invocation of the repository version was verified on 2026-09-01. The [existing Community listing](https://www.figma.com/community/skill/77880/figma-product-design-director) still serves its prior public version; an in-place update is pending final publication review.
 
 ![Product Design Director — structured product-design direction for AI-assisted interface work](assets/social-preview.svg)
 
@@ -34,12 +34,12 @@ These are instruction areas in [`SKILL.md`](SKILL.md), not measured outcome clai
 Product Design Director is distributed as one standalone Markdown skill file.
 
 1. Download or open [`SKILL.md`](SKILL.md).
-2. In a Figma chat that supports custom skills, open **Skills → Add skill** and upload `SKILL.md`.
+2. In a Figma chat that supports custom skills, use the existing updated personal skill or open **Skills → Add skill** and upload `SKILL.md` for a separate private installation.
 3. Review the imported name, description, and instructions before adding it.
 4. Invoke `/figma-product-design-director`, then provide the product goal, users, primary task, content, constraints, and any authoritative reference.
 5. Review the resulting frames, states, and critique; revise with product and implementation evidence.
 
-The upload and invocation flow follows [Figma's custom skills guidance](https://help.figma.com/hc/en-us/articles/40283639496599-Custom-skills-for-the-Figma-agent-and-Figma-Make). This repository has not yet recorded a reproducible Figma import-and-run test.
+The upload and invocation flow follows [Figma's custom skills guidance](https://help.figma.com/hc/en-us/articles/40283639496599-Custom-skills-for-the-Figma-agent-and-Figma-Make). On 2026-09-01, the repository instructions were saved in place to the existing personal canonical skill, exported back for normalized verification, shown once in the slash-command list, and invoked successfully in Figma Design. Figma Design did not expose the underlying model name or a model selector.
 
 ## Copyable invocations
 
@@ -98,13 +98,19 @@ launch/         Channel drafts, gallery assets, metrics, and launch gates
 
 [`launch/preview.html`](launch/preview.html) is an offline review page for the generated visual assets. The files under `launch/` are source material for human-reviewed publication, not evidence that any external channel has been launched.
 
+Runtime evidence is retained under [`evidence/r2/`](evidence/r2/), including the before/after skill exports, minimum invocation, prompt hashes, first completed control and skill-assisted outputs, retries, and a criterion-by-criterion evaluation.
+
 ## Current limitations
 
 - The skill provides design direction rather than deterministic output.
 - Final results depend on the supplied context, references, content, model behavior, and agent execution.
 - Accessibility guidance still requires implementation-level validation, assistive-technology testing where relevant, and human review.
 - Product, brand, legal, and release decisions remain human responsibilities.
-- No verified Figma Community URL, public case study, before/after comparison, testimonial, or reproducible import-and-run record is included yet.
+- The existing Community URL is verified, but its public page still contains the prior version; the repository version is not live there until a human completes final publication review.
+- The included controlled comparison is one observed, non-deterministic paired run, not statistical validation or strict causal proof.
+- The Figma Design agent UI used for verification did not expose the underlying model name or allow a model switch.
+- Neither observed mobile output visibly preserved every supplied secondary item within the 390 x 844 exported frame.
+- No adoption metric, testimonial, public update, or accessibility conformance result is claimed.
 - Figma supports standalone Markdown skill uploads; repository examples and launch assets are not bundled into the uploaded skill.
 
 ## Feedback and contribution

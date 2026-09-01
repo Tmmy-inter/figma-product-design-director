@@ -26,13 +26,15 @@ Product Design Director is a standalone Custom Skill that provides structured di
 
 Upload `SKILL.md` through Figma's custom-skill flow. After a successful import, invoke `/figma-product-design-director` and supply the product goal, users, primary task, content, constraints, and authoritative references.
 
-The repository has not yet recorded a reproducible import-and-run test. Follow the current instructions in `README.md` and report failures with sanitized evidence.
+The repository records an in-place migration, normalized export verification, actual slash command, successful minimum invocation, and one controlled paired Figma Design agent run dated 2026-09-01. Follow the current instructions in `README.md` and report failures with sanitized evidence.
 
 ## Current limitations
 
 - Output is non-deterministic and depends on supplied context and agent execution.
 - Accessibility direction requires implementation-level and human validation.
-- No verified Community URL, real same-brief case study, testimonial, or public demo is bundled.
+- The existing Community URL is verified, but the public page still serves the prior version and the final update remains unpublished.
+- The bundled same-brief case study is one non-deterministic observed example, not statistical validation or strict causal proof.
+- Neither observed mobile output visibly preserved every supplied secondary item in the exported frame.
 - The Figma upload is one standalone Markdown file; repository examples and assets are separate references.
 
 ## Feedback channels
@@ -47,9 +49,8 @@ The existing instruction body is preserved. The display heading changes from “
 
 ## Known issues
 
-- Community listing and support URLs are pending verification.
-- Figma import, command visibility, and representative prompts still require a documented live test.
-- Gallery SVGs describe the method and capabilities; they are not screenshots of generated interface results.
+- The existing Community listing update remains pending final human review and explicit authorization for the final `Publish` action shown by the current UI.
+- Gallery asset 07 contains real synthetic runtime outputs; it must retain its observed-example and non-statistical-validation disclaimer.
 
 ## Existing version history
 

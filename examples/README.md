@@ -2,6 +2,8 @@
 
 These examples are task briefs for a successfully uploaded `/figma-product-design-director` Custom Skill. They describe what the skill should examine; they do not claim that a specific output has been produced or validated.
 
+The repository also includes one [controlled support-operations case study](case-study-01-support-operations-workspace.md) with fixed variables, real first-completed exports, failures, retries, observed differences, and limitations. It is an observed example, not statistical validation.
+
 | Example | Use it when |
 | --- | --- |
 | [Dashboard redesign](01-dashboard-redesign.md) | An existing operational surface has weak hierarchy or a template-like layout. |

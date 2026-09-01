@@ -1,6 +1,6 @@
 # Same-brief case-study capture guide
 
-> No real before/after exists yet. This guide and `assets/before-after-template.svg` are capture infrastructure, not a result.
+> One controlled paired example is now recorded in [`../examples/case-study-01-support-operations-workspace.md`](../examples/case-study-01-support-operations-workspace.md). It is an observed, non-deterministic example rather than statistical or causal validation. This guide and `assets/before-after-template.svg` remain reusable capture infrastructure, not additional results.
 
 ## Study question
 
@@ -59,4 +59,4 @@ Avoid causal or superlative captions unless a larger, reviewed study supports th
 
 ## Reproducibility record
 
-Complete [`../examples/case-study-template.md`](../examples/case-study-template.md). Store original evidence in an authorized location, link the public study as `{{CASE_STUDY_URL}}`, and date every later rerun because model and product behavior can change.
+For a new study, complete [`../examples/case-study-template.md`](../examples/case-study-template.md). The current local example is [`../examples/case-study-01-support-operations-workspace.md`](../examples/case-study-01-support-operations-workspace.md), with original evidence under `../evidence/r2/comparison/`. Link any future public study as `{{CASE_STUDY_URL}}`, and date every later rerun because model and product behavior can change.

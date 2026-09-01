@@ -9,11 +9,14 @@ This changelog records repository changes that can be confirmed from Git history
 - Distribution-ready README, copyable examples, launch-source drafts, editable SVG gallery assets, and an offline preview.
 - Claims ledger, human-input gate, case-study capture protocol, and empty channel-metrics templates.
 - Focused issue, pull-request, contribution, and security guidance.
+- Verified in-place Figma skill migration evidence, a successful minimum invocation, and one controlled paired runtime example with first-completed exports, retries, limitations, and criterion-level evaluation.
+- Seven 1920 × 1080 Community PNG derivatives, including a real controlled-comparison asset marked as non-statistical validation.
 
 ### Changed
 
 - Added Agent Skills frontmatter to `SKILL.md` and aligned the display heading with Product Design Director.
 - Replaced unsupported Community-publication and output-quality language with bounded capability and limitation statements.
+- Recorded the existing canonical Community URL as an update-pending listing; no public update was made.
 
 ## v1.0.0 — 2026-08-17
 

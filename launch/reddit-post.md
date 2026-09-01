@@ -10,7 +10,9 @@
 4. Product Design Director: structured instructions for task-led interface work in Figma
 5. What should a product-design skill check before it draws the interface?
 
-## Pre-publication version — no real before/after yet
+## Historical pre-evidence version — do not publish
+
+This variant is retained only to show the pre-evidence copy boundary. A controlled example now exists, so use the evidence-backed version below after resolving its remaining public-link and account gates.
 
 I have been working on an open-source Custom Skill called Product Design Director.
 
@@ -24,7 +26,7 @@ Source: `{{GITHUB_REPOSITORY_URL}}`
 
 What I would value most: a real, sanitized interface where the skill fails, over-constrains the design, misses a state, or conflicts with an existing system.
 
-## Formal version — publish only after real evidence exists
+## Evidence-backed version — publication still gated
 
 I ran the same product brief twice: once without the skill and once with `/figma-product-design-director`. I kept the content, references, model, target frames, and constraints fixed. The full method, screenshots, failures, and human corrections are here: `{{CASE_STUDY_URL}}`.
 

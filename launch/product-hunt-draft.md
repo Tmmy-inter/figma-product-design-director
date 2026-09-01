@@ -1,6 +1,6 @@
 # Product Hunt source draft
 
-> **NOT LAUNCH-READY.** A real case study, verified Community URL, import-and-run evidence, final gallery, support channel, version decision, and account authorization are missing.
+> **NOT LAUNCH-READY.** The existing Community URL, callable command, dated runtime evidence, controlled comparison, seven-image gallery, and support destination proposal are recorded. The public Community update, final channel URLs, Product Hunt live-interface review, release decision, and publication authorization remain pending.
 
 ## Name
 
@@ -22,11 +22,11 @@ The skill provides design direction rather than deterministic output. Accessibil
 
 I made Product Design Director to turn recurring product-design judgment into a reusable instruction sequence. The trigger was not a lack of styling prompts; it was a repeated pattern of weak hierarchy, default card layouts, missing states, decorative elements without a product role, and mobile frames that only shrink desktop compositions.
 
-The repository includes the full skill, copyable prompts, explicit limitations, editable launch assets, and a protocol for a real same-brief comparison. I am most interested in failure cases: where the instructions become too restrictive, miss a product type, or conflict with a strong reference.
+The repository includes the full skill, copyable prompts, explicit limitations, editable launch assets, and one dated same-brief comparison record. I am most interested in failure cases: where the instructions become too restrictive, miss a product type, or conflict with a strong reference.
 
 ## First comment
 
-If you test it, please share the Figma surface/date, sanitized brief, authoritative references, missing states, failures, and human corrections. The method is non-deterministic, so one favorable output is not proof. Source: `{{GITHUB_REPOSITORY_URL}}` · Support: `{{SUPPORT_URL}}`
+If you test it, please share the Figma surface/date, sanitized brief, authoritative references, missing states, failures, and human corrections. The method is non-deterministic, so one favorable output is not proof. Source: `{{GITHUB_REPOSITORY_URL}}` · Support: `https://github.com/Tmmy-inter/figma-product-design-director/issues`
 
 ## Gallery ordering
 
@@ -36,7 +36,7 @@ If you test it, please share the Figma surface/date, sanitized brief, authoritat
 4. Capability boundary
 5. Quick start
 6. Critique method
-7. Real same-brief comparison only after `{{CASE_STUDY_URL}}` is complete and reviewed
+7. Observed same-brief comparison — not statistical validation (`{{CASE_STUDY_URL}}`)
 
 ## FAQ
 
@@ -54,7 +54,7 @@ No. It includes accessibility review guidance; implementation checks, assistive-
 
 ### How is it installed?
 
-Upload the standalone `SKILL.md` through the current Figma custom-skill flow, then invoke `/figma-product-design-director`. A reproducible import-and-run record is still a launch gate.
+Upload the standalone `SKILL.md` through the current Figma custom-skill flow, then invoke `/figma-product-design-director`. The repository contains one dated import/update, invocation, and paired-run record; current product behavior and the existing Community update still require final human recheck before publication.
 
 ### Is it an official Figma product?
 
@@ -67,21 +67,21 @@ No. It is an independent open-source project.
 ## Launch readiness gate
 
 - [ ] Verified Community, repository, support, case-study, and Release URLs
-- [ ] Reproducible Figma import and representative run evidence
-- [ ] Real same-brief comparison with failures and human corrections
-- [ ] Final gallery and demo reviewed for factual accuracy and channel specifications
+- [x] Dated Figma migration, command, and representative run evidence
+- [x] Same-brief comparison with failures, retries, and human-correction counts
+- [x] Seven-image Community gallery reviewed for factual accuracy in the existing listing update preview
+- [ ] Product Hunt gallery constraints and current rules reviewed in the live interface
 - [ ] Version and GitHub Release decision approved
 - [ ] Product Hunt listing fields and current rules reviewed in the live interface
 - [ ] Maker identity and exact publication action authorized
 
 Until every box is complete, this file remains source material rather than a launch submission.
 
-## Current missing evidence
+## Remaining launch gates
 
-- Public Community listing
-- Live import and command confirmation
-- Real before/after study
-- Public demo video
-- Public support destination
-- Final screenshots and channel preview
+- Final publication of the existing Community update; the current public page still shows the prior version
+- Resolved public source and case-study URLs in this channel draft
+- Product Hunt live-interface preview and current-rule review
+- Optional public demo video decision and, if used, reviewed media
 - Authorized release version and URL
+- Maker identity and exact Product Hunt publication authorization
