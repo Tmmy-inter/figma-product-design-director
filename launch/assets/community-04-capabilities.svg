@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Product Design Director capability boundary</title>
+  <desc id="desc">Three capability groups covering visual systems, product interface direction, and review.</desc>
+  <style>
+    .sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .ink { fill: #171A1F; } .muted { fill: #545D68; }
+    .rule { stroke: #C8CDD3; stroke-width: 3; }
+  </style>
+  <rect width="1920" height="1080" fill="#F6F3EC"/>
+  <text x="112" y="110" class="mono muted" font-size="24" font-weight="700" letter-spacing="3">CAPABILITY BOUNDARY / 04</text>
+  <text x="112" y="230" class="sans ink" font-size="76" font-weight="760" letter-spacing="-3">One instruction system. Three responsibilities.</text>
+  <text x="112" y="292" class="sans muted" font-size="32">Coverage in SKILL.md—not a claim that every output satisfies it.</text>
+  <line x1="112" y1="366" x2="1808" y2="366" class="rule"/>
+  <line x1="660" y1="366" x2="660" y2="930" class="rule"/>
+  <line x1="1234" y1="366" x2="1234" y2="930" class="rule"/>
+
+  <g class="sans">
+    <text x="112" y="450" class="mono" fill="#B83A2D" font-size="24">01 / VISUAL SYSTEM</text>
+    <text x="112" y="530" class="ink" font-size="40" font-weight="680">Visual identity</text>
+    <text x="112" y="600" class="ink" font-size="40" font-weight="680">Semantic color</text>
+    <text x="112" y="670" class="ink" font-size="40" font-weight="680">Typography</text>
+    <text x="112" y="740" class="ink" font-size="40" font-weight="680">Spacing &amp; geometry</text>
+    <text x="112" y="810" class="ink" font-size="40" font-weight="680">Surfaces &amp; icons</text>
+
+    <text x="716" y="450" class="mono" fill="#B83A2D" font-size="24">02 / PRODUCT UI</text>
+    <text x="716" y="530" class="ink" font-size="40" font-weight="680">Hierarchy</text>
+    <text x="716" y="600" class="ink" font-size="40" font-weight="680">Task-led layout</text>
+    <text x="716" y="670" class="ink" font-size="40" font-weight="680">Component states</text>
+    <text x="716" y="740" class="ink" font-size="40" font-weight="680">Responsive priority</text>
+    <text x="716" y="810" class="ink" font-size="40" font-weight="680">Interaction &amp; motion</text>
+
+    <text x="1290" y="450" class="mono" fill="#B83A2D" font-size="24">03 / REVIEW</text>
+    <text x="1290" y="530" class="ink" font-size="40" font-weight="680">Accessibility guidance</text>
+    <text x="1290" y="600" class="ink" font-size="40" font-weight="680">Reference fidelity</text>
+    <text x="1290" y="670" class="ink" font-size="40" font-weight="680">Authenticity</text>
+    <text x="1290" y="740" class="ink" font-size="40" font-weight="680">Design critique</text>
+    <text x="1290" y="810" class="ink" font-size="40" font-weight="680">Whole-flow recheck</text>
+  </g>
+  <text x="112" y="984" class="sans muted" font-size="28">Human review remains necessary for product decisions, implementation behavior, and accessibility validation.</text>
+</svg>

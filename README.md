@@ -1,45 +1,122 @@
-# Figma Product Design Director
+# Product Design Director
 
-An open-source Figma AI Custom Skill for creating distinctive, coherent, accessible product interfaces and visual systems.
+An open-source Custom Skill for structured product-design direction in Figma: visual systems, hierarchy, task-led layout, component states, responsive behavior, interaction, motion, accessibility review, and critique.
 
-## Overview
+[View on Figma Community](https://www.figma.com/community/skill/77880/figma-product-design-director) · [Read SKILL.md](SKILL.md) · [Explore examples](examples/README.md)
 
-Figma Product Design Director guides Figma AI through the full design reasoning surface of a product experience: visual identity, art direction, layout, typography, color, spacing, components, responsive behavior, interaction, motion, and critique.
+> Product Design Director is available on [Figma Community](https://www.figma.com/community/skill/77880/figma-product-design-director). The repository may contain newer open-source revisions than the currently published Community version.
 
-The skill is designed for applications, dashboards, websites, developer tools, creative workspaces, and brand-led product surfaces. It emphasizes reference fidelity, strong information hierarchy, premium restraint, product authenticity, and deliberate avoidance of generic template aesthetics.
+![Product Design Director — structured product-design direction for AI-assisted interface work](assets/social-preview.svg)
 
-This repository contains a Figma AI Skill that helps AI agents create polished product interfaces, visual systems, and scalable design systems.
+## Why this exists
 
-## Design capabilities
+AI-assisted interface work can drift toward generic card grids, weak information hierarchy, missing interaction states, decorative visuals, and desktop layouts that are merely compressed for mobile. Product Design Director gives the agent a structured set of design decisions and critique criteria to examine before and after it creates interface work.
 
-- UI, UX, visual identity, and brand direction
-- Semantic color and typography systems
-- Spacing, geometry, surfaces, and icon language
-- Application, dashboard, website, and workspace layouts
-- Component families and interaction states
-- Responsive behavior and motion principles
-- Accessibility and design critique criteria
-- Anti-pattern guidance for avoiding generic AI-generated interfaces
-- Optional planner, designer, and critic collaboration roles
+It is written for product designers and AI product builders using the Figma agent or Figma Make on real product surfaces; design-systems practitioners can use its reference, component, and critique checks.
 
-## Use
+The skill provides direction. It does not claim to make every output distinctive, accessible, or correct.
 
-Use the complete [`SKILL.md`](SKILL.md) wherever your Figma AI Custom Skill setup accepts skill instructions. The file is self-contained. Preserve its heading structure and content so the skill remains in Figma Custom Skill format.
+## What the skill covers
 
-## Figma Community
+- Product context, audience, task, brand evidence, and reference fidelity
+- Visual identity, semantic color, typography, spacing, geometry, surfaces, and icon language
+- Task-appropriate layout models instead of a default card or bento grid
+- Component families and relevant default, hover, focus, selected, disabled, loading, empty, success, and error states
+- Responsive prioritization that reflows or collapses secondary regions instead of simply shrinking a desktop frame
+- Interaction feedback, purposeful motion, and reduced-motion variants
+- Accessibility review guidance for contrast, focus, labels, target size, keyboard order, and non-color cues
+- A critique pass that records the observed condition, user impact, and smallest reasonable revision
 
-This skill has been published as a Figma Custom Skill for use with Figma AI.
+These are instruction areas in [`SKILL.md`](SKILL.md), not measured outcome claims.
 
-## Project files
+## Quick start
 
-- [`SKILL.md`](SKILL.md) — the complete Figma AI Custom Skill
-- [`README.md`](README.md) — project overview and usage guidance
-- [`LICENSE`](LICENSE) — MIT License
+Product Design Director is distributed as one standalone Markdown skill file.
 
-## Contributing
+1. Download or open [`SKILL.md`](SKILL.md).
+2. In a Figma chat that supports custom skills, use the existing updated personal skill or open **Skills → Add skill** and upload `SKILL.md` for a separate private installation.
+3. Review the imported name, description, and instructions before adding it.
+4. Invoke `/figma-product-design-director`, then provide the product goal, users, primary task, content, constraints, and any authoritative reference.
+5. Review the resulting frames, states, and critique; revise with product and implementation evidence.
 
-Contributions are welcome. Keep proposals focused on Figma-facing product design guidance. Preserve the Custom Skill structure and avoid adding software engineering, framework, build, or developer-environment instructions to `SKILL.md`.
+The upload and invocation flow follows [Figma's custom skills guidance](https://help.figma.com/hc/en-us/articles/40283639496599-Custom-skills-for-the-Figma-agent-and-Figma-Make). On 2026-09-01, the repository instructions were saved in place to the existing personal canonical skill, exported back for normalized verification, shown once in the slash-command list, and invoked successfully in Figma Design. Figma Design did not expose the underlying model name or a model selector.
 
-## License
+## Copyable invocations
 
-Released under the [MIT License](LICENSE).
+### Redesign an existing dashboard
+
+```text
+Use /figma-product-design-director to redesign this dashboard around the operator's primary task. Preserve the supplied content and brand references. Define hierarchy and region ownership before styling, choose a task-appropriate layout, cover the relevant interaction states, and finish with a critique that separates confirmed issues from optional explorations.
+```
+
+### Audit a product flow
+
+```text
+Use /figma-product-design-director to audit this product flow. Check purpose, information order, primary and contextual actions, component states, feedback, accessibility review points, and continuity between steps. For each issue, report the observed condition, user impact, and smallest reasonable revision.
+```
+
+### Adapt a desktop interface for mobile
+
+```text
+Use /figma-product-design-director to adapt this desktop interface for a mobile frame. Preserve the main task and brand evidence. Reconsider hierarchy, navigation, density, target sizes, panel priority, overflow, and reachable actions instead of shrinking the desktop composition.
+```
+
+More prompts cover [visual-system direction](examples/04-visual-system-direction.md) and [design critique](examples/05-design-critique.md).
+
+## How the workflow operates
+
+The skill defines staged planning, design, critique, revision, and final-critique passes:
+
+1. **Context** — inspect purpose, audience, key tasks, content, brand evidence, and references.
+2. **Planner** — define the goal, hierarchy, actions, states, density, responsive priorities, and exclusions.
+3. **Designer** — translate the brief into visual-system and interface decisions.
+4. **Critic** — review hierarchy, consistency, accessibility guidance, responsiveness, authenticity, and reference fidelity.
+5. **Revision** — apply focused corrections, then re-review the complete flow.
+
+Agent execution can vary; the staged instructions do not guarantee that a runtime will create independent subagents or deterministic output.
+
+## Design principles
+
+- Start from evidence and protect authoritative references.
+- Set hierarchy before decoration and design around the real task.
+- Use visual economy: every visible element should earn its place.
+- Build sophistication through typography, proportion, spacing, alignment, and restraint.
+- Reuse semantic variables, text styles, layout rules, and component families.
+- Make important states clear without relying on color alone.
+- Adapt by priority at narrow widths rather than compressing the wide layout.
+- Preserve product authenticity instead of copying a familiar product template.
+
+## Repository structure
+
+```text
+SKILL.md        Standalone Custom Skill instructions
+examples/       Copyable prompts and a real-case template
+assets/         Repository social preview
+launch/         Channel drafts, gallery assets, metrics, and launch gates
+.github/        Issue and pull-request templates
+```
+
+[`launch/preview.html`](launch/preview.html) is an offline review page for the generated visual assets. The files under `launch/` are source material for human-reviewed publication, not evidence that any external channel has been launched.
+
+Runtime evidence is retained under [`evidence/r2/`](evidence/r2/), including the before/after skill exports, minimum invocation, prompt hashes, first completed control and skill-assisted outputs, retries, and a criterion-by-criterion evaluation.
+
+## Current limitations
+
+- The skill provides design direction rather than deterministic output.
+- Final results depend on the supplied context, references, content, model behavior, and agent execution.
+- Accessibility guidance still requires implementation-level validation, assistive-technology testing where relevant, and human review.
+- Product, brand, legal, and release decisions remain human responsibilities.
+- Product Design Director is available on Figma Community; the repository may contain newer open-source revisions than the currently published Community version.
+- The included controlled comparison is one observed, non-deterministic paired run, not statistical validation or strict causal proof.
+- The Figma Design agent UI used for verification did not expose the underlying model name or allow a model switch.
+- Neither observed mobile output visibly preserved every supplied secondary item within the 390 x 844 exported frame.
+- No adoption metric, testimonial, public update, or accessibility conformance result is claimed.
+- Figma supports standalone Markdown skill uploads; repository examples and launch assets are not bundled into the uploaded skill.
+
+## Feedback and contribution
+
+Use the [structured GitHub issue templates](https://github.com/Tmmy-inter/figma-product-design-director/issues/new/choose) for instruction problems, agent-execution problems, documentation defects, or feature proposals. Remove private product data and secrets before sharing a prompt, reference, or screenshot. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for scope and review expectations.
+
+## License and attribution
+
+Released under the [MIT License](LICENSE). This is an independent open-source project and is not presented as an official Figma product. Figma is a trademark of its respective owner.

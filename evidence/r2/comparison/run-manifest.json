@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-01",
+  "timezone": "Asia/Shanghai",
+  "surface": "Figma Design agent",
+  "model": "Figma Design agent default; underlying model name not exposed by product UI",
+  "promptBodySha256": "8a270dc66b19dfc57648b695d02cd298bb92d10572d37c579663641cd2c879d9",
+  "plannedVariable": "Skill invocation /figma-product-design-director",
+  "seed": {
+    "frame": "R2 Seed Desktop",
+    "file": "seed-desktop.png",
+    "sha256": "a82e15bdc189c52bb0654ae905f6a8afbffbf7060bc005397c6ea21b4382157a",
+    "dimensions": "1440x1024"
+  },
+  "control": {
+    "selectedFrame": "R2 Control Start",
+    "started": "2026-09-01T21:54:40+08:00",
+    "reportedDuration": "5m37s",
+    "manualRetries": 0,
+    "manualCorrections": 0,
+    "agentInternalRetries": 1,
+    "desktop": {"file": "control-desktop.png", "sha256": "847ccc6c85be06349eb98755c54e7274fd900127df927d7d4e976eaf2dd0935e", "dimensions": "1440x1024"},
+    "mobile": {"file": "control-mobile.png", "sha256": "703ecaf2e9e2a98d482bce7742ea664780f832bddba842cb03ac27a6e2130819", "dimensions": "390x844"}
+  },
+  "skillAssisted": {
+    "selectedFrame": "R2 Skill-Assisted Start",
+    "skill": "/figma-product-design-director",
+    "started": "2026-09-01T22:02:21+08:00",
+    "reportedDuration": "3m20s",
+    "manualRetries": 0,
+    "manualCorrections": 0,
+    "agentInternalRetries": 0,
+    "desktop": {"file": "skill-desktop.png", "sha256": "7fd1704e3941bfd3e00731dc56f2479ac9b227da3722ede35d48f7c00d44e26a", "dimensions": "1440x1024"},
+    "mobile": {"file": "skill-mobile.png", "sha256": "67055dc9c0c590cfa933e6ffbfaec78b80c23731344da1adc9d0c46589922880", "dimensions": "390x844"}
+  },
+  "limitations": [
+    "Agent execution is non-deterministic.",
+    "One paired run is not statistical validation.",
+    "The planned variable does not establish strict causality.",
+    "Human design review remains required."
+  ]
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Product Design Director staged workflow</title>
+  <desc id="desc">Context, planner, designer, critic, and revision stages.</desc>
+  <style>
+    .sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .ink { fill: #171A1F; } .muted { fill: #545D68; }
+    .line { stroke: #C8CDD3; stroke-width: 4; fill: none; }
+  </style>
+  <rect width="1920" height="1080" fill="#F6F3EC"/>
+  <text x="112" y="110" class="mono muted" font-size="24" font-weight="700" letter-spacing="3">WORKFLOW / 03</text>
+  <text x="112" y="230" class="sans ink" font-size="76" font-weight="760" letter-spacing="-3">Structure judgment before revision</text>
+  <text x="112" y="292" class="sans muted" font-size="32">Staged passes defined in SKILL.md; runtime execution can vary.</text>
+
+  <line x1="210" y1="538" x2="1710" y2="538" class="line"/>
+  <g class="sans" font-weight="700" font-size="30">
+    <circle cx="210" cy="538" r="54" fill="#B83A2D"/><text x="194" y="549" fill="#FFFFFF">01</text>
+    <circle cx="585" cy="538" r="54" fill="#F6F3EC" stroke="#171A1F" stroke-width="4"/><text x="569" y="549" class="ink">02</text>
+    <circle cx="960" cy="538" r="54" fill="#F6F3EC" stroke="#171A1F" stroke-width="4"/><text x="944" y="549" class="ink">03</text>
+    <circle cx="1335" cy="538" r="54" fill="#F6F3EC" stroke="#171A1F" stroke-width="4"/><text x="1319" y="549" class="ink">04</text>
+    <circle cx="1710" cy="538" r="54" fill="#F6F3EC" stroke="#171A1F" stroke-width="4"/><text x="1694" y="549" class="ink">05</text>
+  </g>
+  <g class="sans ink" font-size="42" font-weight="680" text-anchor="middle">
+    <text x="210" y="690">Context</text><text x="585" y="690">Planner</text><text x="960" y="690">Designer</text><text x="1335" y="690">Critic</text><text x="1710" y="690">Revision</text>
+  </g>
+  <g class="sans muted" font-size="26" text-anchor="middle">
+    <text x="210" y="742">Purpose · users</text><text x="210" y="778">task · evidence</text>
+    <text x="585" y="742">Hierarchy · actions</text><text x="585" y="778">states · exclusions</text>
+    <text x="960" y="742">System · layout</text><text x="960" y="778">interaction · frames</text>
+    <text x="1335" y="742">Condition · impact</text><text x="1335" y="778">confidence · revision</text>
+    <text x="1710" y="742">Focused correction</text><text x="1710" y="778">whole-flow recheck</text>
+  </g>
+  <text x="112" y="972" class="sans muted" font-size="28">The workflow provides direction; it does not guarantee independent subagents or deterministic output.</text>
+</svg>

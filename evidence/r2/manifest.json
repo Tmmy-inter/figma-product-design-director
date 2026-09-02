@@ -1,0 +1,106 @@
+{
+  "distributionStage": "DISTRIBUTION-R2.1",
+  "date": "2026-09-01",
+  "timezone": "Asia/Shanghai",
+  "evidenceScope": "Historical 2026-09-01 observation; a later 2026-09-02 live reinspection did not confirm complete seven-image draft persistence.",
+  "repositoryBaseline": {
+    "worktreeRole": "authorized distribution worktree",
+    "branch": "docs/distribution-r1",
+    "baselineHead": "4eca08f12fbad66a75b9125aa639ecc4b5f704d5",
+    "skillSha256": "b4bbe07a057e400c9406bfe41242219ce491c0ff05260846f7e6a9db513e2997"
+  },
+  "ownership": {
+    "status": "OWNERSHIP_CONFIRMED",
+    "technicalName": "figma-product-design-director",
+    "publisher": "Aivon",
+    "communityUrl": "https://www.figma.com/community/skill/77880/figma-product-design-director",
+    "files": [
+      "migration/ownership-panel.png",
+      "migration/ownership-observation.md"
+    ]
+  },
+  "migration": {
+    "status": "IN_PLACE_PERSONAL_VERSION_MIGRATION_VERIFIED",
+    "beforeSha256": "3b522b1a61399bdc4137cdfb97a34ef0bc5c726a29be9c8f498d365d9830857a",
+    "afterSha256": "3f02f141ff2a276c74b33a60409b7637594901569b9faf0a04cb755491f1bb46",
+    "normalizedAfterMatchesRepository": true,
+    "files": [
+      "migration/existing-skill-before.md",
+      "migration/before-vs-repository-diff.md",
+      "migration/edit-before-save.png",
+      "migration/edit-after-save.png",
+      "migration/existing-skill-after.md",
+      "migration/after-vs-repository-verification.md",
+      "migration/migration-observation.md"
+    ]
+  },
+  "invocation": {
+    "status": "MINIMUM_INVOCATION_PASSED",
+    "command": "/figma-product-design-director",
+    "modelBoundary": "Figma Design agent default; underlying model name not exposed by product UI",
+    "files": [
+      "import/slash-command-visible.png",
+      "invocation/command-list-observation.md",
+      "invocation/minimal-input.png",
+      "invocation/minimal-prompt.md",
+      "invocation/minimal-output.md",
+      "invocation/minimal-result.png",
+      "invocation/invocation-observation.md"
+    ]
+  },
+  "comparison": {
+    "status": "COMPLETE_SINGLE_PAIRED_OBSERVATION",
+    "promptBodySha256": "8a270dc66b19dfc57648b695d02cd298bb92d10572d37c579663641cd2c879d9",
+    "files": [
+      "comparison/seed-desktop.png",
+      "comparison/control-desktop.png",
+      "comparison/control-mobile.png",
+      "comparison/skill-desktop.png",
+      "comparison/skill-mobile.png",
+      "comparison/control-prompt.md",
+      "comparison/skill-prompt.md",
+      "comparison/control-output.md",
+      "comparison/skill-output.md",
+      "comparison/run-manifest.json",
+      "comparison/retry-log.md",
+      "comparison/evaluation.md"
+    ]
+  },
+  "communityDraft": {
+    "status": "HISTORICAL_2026_09_01_FINAL_REVIEW_STEP_REACHED_NOT_PUBLISHED",
+    "currentDraftState": "UNKNOWN_OR_INCOMPLETE_AFTER_2026_09_02_REINSPECTION",
+    "completeSevenImagePersistenceVerified": false,
+    "currentAsset07UploadVerified": false,
+    "finalUiActionLabel": "Publish",
+    "finalActionClicked": false,
+    "publicPageChanged": false,
+    "communityUrlChanged": false,
+    "duplicateListingCreated": false,
+    "supportDestinationProposed": "https://github.com/Tmmy-inter/figma-product-design-director/issues",
+    "files": [
+      "community/current-community-page.png",
+      "community/publish-changes-fields.md",
+      "community/gallery-order.md",
+      "community/gallery-step.png",
+      "community/publish-changes-preview.png",
+      "community/publisher-observation.md"
+    ]
+  },
+  "retainedR2ImportEvidence": [
+    "import/import-preview.png",
+    "import/manage-skills-entry.png",
+    "import/import-observation.md",
+    "official-behavior-notes.md"
+  ],
+  "privacy": {
+    "personalContactValueRetained": false,
+    "privateTeamLabelRetained": false,
+    "screenshotsCroppedOrRedactedWhereRequired": true
+  },
+  "limitations": [
+    "Agent execution is non-deterministic.",
+    "One paired run is not statistical validation.",
+    "The planned variable does not establish strict causality.",
+    "Human design review remains required."
+  ]
+}

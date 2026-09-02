@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Same-brief comparison template with no results</title>
+  <desc id="desc">Clearly marked template containing empty areas for a future baseline and skill-assisted capture.</desc>
+  <style>
+    .sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .ink { fill: #171A1F; } .muted { fill: #545D68; }
+    .line { stroke: #C8CDD3; stroke-width: 3; fill: none; }
+  </style>
+  <rect width="1920" height="1080" fill="#F6F3EC"/>
+  <rect x="0" y="0" width="1920" height="92" fill="#B83A2D"/>
+  <text x="960" y="60" class="mono" fill="#FFFFFF" font-size="30" font-weight="800" text-anchor="middle" letter-spacing="4">TEMPLATE — NO RESULTS SHOWN</text>
+  <text x="112" y="200" class="sans ink" font-size="70" font-weight="760" letter-spacing="-3">Same brief / fixed variables / one changed condition</text>
+  <text x="112" y="258" class="sans muted" font-size="30">Replace the empty capture areas only with real, reviewed evidence.</text>
+
+  <text x="112" y="358" class="mono" fill="#B83A2D" font-size="24">WITHOUT SKILL</text>
+  <rect x="112" y="392" width="790" height="446" class="line" stroke-dasharray="16 12"/>
+  <text x="507" y="604" class="sans muted" font-size="32" text-anchor="middle">INSERT REAL BASELINE CAPTURE</text>
+  <text x="507" y="652" class="mono muted" font-size="22" text-anchor="middle">DATE · FIGMA SURFACE · VISIBLE RUNTIME · RUN ID</text>
+
+  <text x="1018" y="358" class="mono" fill="#B83A2D" font-size="24">WITH SKILL</text>
+  <rect x="1018" y="392" width="790" height="446" class="line" stroke-dasharray="16 12"/>
+  <text x="1413" y="604" class="sans muted" font-size="32" text-anchor="middle">INSERT REAL SKILL-ASSISTED CAPTURE</text>
+  <text x="1413" y="652" class="mono muted" font-size="22" text-anchor="middle">DATE · FIGMA SURFACE · VISIBLE RUNTIME · RUN ID</text>
+
+  <line x1="112" y1="900" x2="1808" y2="900" class="line"/>
+  <text x="112" y="952" class="sans ink" font-size="27" font-weight="650">Fixed:</text>
+  <text x="206" y="952" class="sans muted" font-size="27">brief · content · references · visible runtime · target frames · correction budget</text>
+  <text x="112" y="1004" class="sans ink" font-size="27" font-weight="650">Record:</text>
+  <text x="224" y="1004" class="sans muted" font-size="27">observed differences · failures · human corrections · reproducibility notes</text>
+</svg>

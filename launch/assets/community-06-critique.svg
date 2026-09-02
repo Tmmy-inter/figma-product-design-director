@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Product Design Director critique method</title>
+  <desc id="desc">A trace from observed condition through impact to the smallest reasonable revision and whole-flow recheck.</desc>
+  <style>
+    .sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .ink { fill: #171A1F; } .muted { fill: #545D68; }
+    .line { stroke: #C8CDD3; stroke-width: 4; fill: none; }
+  </style>
+  <rect width="1920" height="1080" fill="#F6F3EC"/>
+  <text x="112" y="110" class="mono muted" font-size="24" font-weight="700" letter-spacing="3">CRITIQUE / 06</text>
+  <text x="112" y="230" class="sans ink" font-size="76" font-weight="760" letter-spacing="-3">Make critique operational</text>
+  <text x="112" y="292" class="sans muted" font-size="32">Describe the condition, its impact, and the smallest useful change.</text>
+
+  <line x1="112" y1="520" x2="1760" y2="520" class="line"/>
+  <g class="sans" text-anchor="middle">
+    <circle cx="248" cy="520" r="68" fill="#B83A2D"/>
+    <text x="248" y="531" fill="#FFFFFF" font-size="34" font-weight="720">01</text>
+    <text x="248" y="674" class="ink" font-size="40" font-weight="680">Observed condition</text>
+    <text x="248" y="728" class="muted" font-size="26">What is visible?</text>
+
+    <circle cx="710" cy="520" r="68" fill="#F6F3EC" stroke="#171A1F" stroke-width="4"/>
+    <text x="710" y="531" class="ink" font-size="34" font-weight="720">02</text>
+    <text x="710" y="674" class="ink" font-size="40" font-weight="680">User impact</text>
+    <text x="710" y="728" class="muted" font-size="26">What becomes harder?</text>
+
+    <circle cx="1172" cy="520" r="68" fill="#F6F3EC" stroke="#171A1F" stroke-width="4"/>
+    <text x="1172" y="531" class="ink" font-size="34" font-weight="720">03</text>
+    <text x="1172" y="674" class="ink" font-size="40" font-weight="680">Smallest revision</text>
+    <text x="1172" y="728" class="muted" font-size="26">What is the narrow fix?</text>
+
+    <circle cx="1634" cy="520" r="68" fill="#F6F3EC" stroke="#171A1F" stroke-width="4"/>
+    <text x="1634" y="531" class="ink" font-size="34" font-weight="720">04</text>
+    <text x="1634" y="674" class="ink" font-size="40" font-weight="680">Whole-flow recheck</text>
+    <text x="1634" y="728" class="muted" font-size="26">Did the change regress context?</text>
+  </g>
+
+  <text x="112" y="888" class="mono" fill="#B83A2D" font-size="24">REVIEW BOUNDARY</text>
+  <text x="112" y="948" class="sans muted" font-size="30">Separate confirmed mismatches from optional explorations and unresolved assumptions.</text>
+  <text x="112" y="996" class="sans muted" font-size="30">Accessibility guidance still requires implementation-level validation and human judgment.</text>
+</svg>

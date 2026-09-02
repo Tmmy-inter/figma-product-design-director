@@ -1,8 +1,6 @@
 ---
 name: figma-product-design-director
 description: Provides structured product-design direction for Figma interface work, including visual systems, hierarchy, layout, component states, responsive behavior, interaction, motion, accessibility review, and critique. Use for designing, adapting, or reviewing product interfaces in Figma.
-license: MIT
-compatibility: Intended for the Figma agent and Figma Make custom skill upload.
 ---
 
 # Product Design Director

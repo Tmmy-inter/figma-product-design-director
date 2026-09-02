@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Design Director — local launch preview</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --canvas: #f6f3ec;
+        --surface: #ffffff;
+        --ink: #171a1f;
+        --muted: #545d68;
+        --line: #c8cdd3;
+        --accent: #b83a2d;
+        --focus: #0969da;
+        --gutter: clamp(1rem, 4vw, 4rem);
+      }
+
+      * { box-sizing: border-box; }
+
+      html { background: var(--canvas); }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--canvas);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      a { color: inherit; text-underline-offset: 0.2em; }
+      a:hover { color: var(--accent); }
+      a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+
+      header,
+      main,
+      footer {
+        width: min(100%, 1440px);
+        margin-inline: auto;
+        padding-inline: var(--gutter);
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr);
+        gap: 3rem;
+        padding-block: clamp(3rem, 8vw, 7rem) clamp(2.5rem, 6vw, 5rem);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow,
+      .asset-meta,
+      .status {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow { color: var(--accent); }
+
+      h1 {
+        max-width: 12ch;
+        margin: 1rem 0 1.25rem;
+        font-size: clamp(3.2rem, 8vw, 7.5rem);
+        line-height: 0.92;
+        letter-spacing: -0.055em;
+      }
+
+      .lede {
+        max-width: 40rem;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(1.25rem, 2.4vw, 2rem);
+      }
+
+      .review-panel {
+        align-self: end;
+        padding-block: 1.5rem;
+        border-block: 1px solid var(--line);
+      }
+
+      .status { color: var(--accent); }
+
+      .review-panel p {
+        margin: 0.75rem 0 1.5rem;
+        color: var(--muted);
+      }
+
+      .review-links {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      section { padding-block: clamp(3.5rem, 7vw, 6.5rem); }
+      section + section { border-top: 1px solid var(--line); }
+
+      .section-heading {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.7fr);
+        gap: 2rem;
+        align-items: end;
+        margin-bottom: 2.5rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 4rem);
+        line-height: 1;
+        letter-spacing: -0.04em;
+      }
+
+      .section-heading p { margin: 0; color: var(--muted); }
+
+      figure { margin: 0; }
+
+      .asset-frame {
+        overflow: hidden;
+        background: var(--surface);
+        border: 1px solid var(--line);
+      }
+
+      .asset-frame img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      figcaption {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.75rem 1.5rem;
+        padding-top: 0.9rem;
+        color: var(--muted);
+      }
+
+      .asset-name { color: var(--ink); font-weight: 680; }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(2rem, 5vw, 4rem) 2rem;
+      }
+
+      .subheading {
+        margin: clamp(3rem, 6vw, 5rem) 0 1.5rem;
+        font-size: clamp(1.4rem, 2.5vw, 2rem);
+        letter-spacing: -0.02em;
+      }
+
+      .subheading + p {
+        max-width: 50rem;
+        margin: -0.75rem 0 2rem;
+        color: var(--muted);
+      }
+
+      .template-warning {
+        margin-bottom: 1.5rem;
+        padding: 1rem 1.25rem;
+        color: #ffffff;
+        background: var(--accent);
+        font-weight: 750;
+        letter-spacing: 0.02em;
+      }
+
+      .gate-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid var(--line);
+      }
+
+      .gate-list li {
+        min-height: 9rem;
+        padding: 1.4rem 1.2rem 1.4rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .gate-list li:not(:nth-child(3n + 1)) { padding-left: 1.2rem; border-left: 1px solid var(--line); }
+      .gate-list strong { display: block; margin-bottom: 0.4rem; }
+      .gate-list span { color: var(--muted); }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding-block: 2rem 4rem;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+      }
+
+      @media (max-width: 980px) {
+        header,
+        .section-heading { grid-template-columns: 1fr; }
+        .gallery { grid-template-columns: 1fr; }
+        .gate-list { grid-template-columns: 1fr; }
+        .gate-list li,
+        .gate-list li:not(:nth-child(3n + 1)) { padding-left: 0; border-left: 0; }
+      }
+
+      @media (max-width: 640px) {
+        :root { --gutter: 1rem; }
+        h1 { font-size: clamp(2.8rem, 16vw, 4.6rem); }
+        .review-links a { display: block; padding-block: 0.75rem; }
+        figcaption { display: block; }
+        .asset-meta { display: block; margin-top: 0.35rem; }
+        footer { display: block; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { scroll-behavior: auto !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="eyebrow">Open-source Custom Skill / Local review</div>
+        <h1>Product Design Director</h1>
+        <p class="lede">Structured product-design direction for AI-assisted interface work in Figma.</p>
+      </div>
+      <aside class="review-panel" aria-label="Review status and source links">
+        <div class="status">Local launch preview</div>
+        <p>Runtime migration, invocation, and one controlled comparison are verified. Product Design Director is available on Figma Community; repository revisions may be newer, and Figma draft state remains separately gated.</p>
+        <nav class="review-links" aria-label="Repository review links">
+          <a href="#community-title">Review visual sequence</a>
+          <a href="../README.md">Read product README</a>
+          <a href="../SKILL.md">Read standalone Skill</a>
+          <a href="human-input-required.md">Review human inputs</a>
+          <a href="claims-ledger.md">Inspect claims ledger</a>
+        </nav>
+      </aside>
+    </header>
+
+    <main>
+      <section aria-labelledby="social-title">
+        <div class="section-heading">
+          <h2 id="social-title">Repository preview</h2>
+          <p>GitHub and social-preview source. The raster derivative should remain 1280 × 640.</p>
+        </div>
+        <div class="gallery">
+          <figure>
+            <div class="asset-frame"><img src="../assets/social-preview.svg" alt="Product Design Director social preview with a five-stage design decision trace"></div>
+            <figcaption><a class="asset-name" href="../assets/social-preview.svg">social-preview.svg</a><span class="asset-meta">1280 × 640 / editable SVG</span></figcaption>
+          </figure>
+          <figure>
+            <div class="asset-frame"><img src="../assets/social-preview.png" alt="Raster export of the Product Design Director social preview"></div>
+            <figcaption><a class="asset-name" href="../assets/social-preview.png">social-preview.png</a><span class="asset-meta">1280 × 640 / raster derivative</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="community-title">
+        <div class="section-heading">
+          <h2 id="community-title">Community sequence</h2>
+          <p>Six method-led images plus one real controlled example. The comparison preserves its non-deterministic, non-statistical boundary.</p>
+        </div>
+        <div class="gallery">
+          <figure><div class="asset-frame"><img src="assets/community-01-cover.svg" alt="Product Design Director cover and five-stage decision trace"></div><figcaption><a class="asset-name" href="assets/community-01-cover.svg">01 / Cover</a><span class="asset-meta">1920 × 1080</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-02-problem.svg" alt="Five common AI-assisted interface failure modes"></div><figcaption><a class="asset-name" href="assets/community-02-problem.svg">02 / Problem</a><span class="asset-meta">1920 × 1080</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-03-workflow.svg" alt="Context, planner, designer, critic, and revision stages"></div><figcaption><a class="asset-name" href="assets/community-03-workflow.svg">03 / Workflow</a><span class="asset-meta">1920 × 1080</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-04-capabilities.svg" alt="Visual-system, product-interface, and review capability groups"></div><figcaption><a class="asset-name" href="assets/community-04-capabilities.svg">04 / Capabilities</a><span class="asset-meta">1920 × 1080</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-05-quick-start.svg" alt="Upload, invoke, supply context, review and iterate"></div><figcaption><a class="asset-name" href="assets/community-05-quick-start.svg">05 / Quick start</a><span class="asset-meta">1920 × 1080</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-06-critique.svg" alt="Observed condition, user impact, smallest revision, and whole-flow recheck"></div><figcaption><a class="asset-name" href="assets/community-06-critique.svg">06 / Critique</a><span class="asset-meta">1920 × 1080</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-07-before-after.svg" alt="Control and skill-assisted outputs from one paired Figma Design agent comparison, marked as not statistical validation"></div><figcaption><a class="asset-name" href="assets/community-07-before-after.svg">07 / One controlled comparison</a><span class="asset-meta">1920 × 1080 / editable SVG</span></figcaption></figure>
+        </div>
+        <h3 class="subheading">Raster upload files</h3>
+        <p>These are the exact 1920 × 1080 repository PNG derivatives. Local files do not prove that a complete unpublished Figma draft currently persists.</p>
+        <div class="gallery">
+          <figure><div class="asset-frame"><img src="assets/community-01-cover.png" alt="Raster upload of the Product Design Director cover"></div><figcaption><a class="asset-name" href="assets/community-01-cover.png">01 / Cover PNG</a><span class="asset-meta">1920 × 1080 / upload file</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-02-problem.png" alt="Raster upload of the interface failure-mode overview"></div><figcaption><a class="asset-name" href="assets/community-02-problem.png">02 / Problem PNG</a><span class="asset-meta">1920 × 1080 / upload file</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-03-workflow.png" alt="Raster upload of the five-stage workflow"></div><figcaption><a class="asset-name" href="assets/community-03-workflow.png">03 / Workflow PNG</a><span class="asset-meta">1920 × 1080 / upload file</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-04-capabilities.png" alt="Raster upload of the capability groups"></div><figcaption><a class="asset-name" href="assets/community-04-capabilities.png">04 / Capabilities PNG</a><span class="asset-meta">1920 × 1080 / upload file</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-05-quick-start.png" alt="Raster upload of the verified quick-start sequence"></div><figcaption><a class="asset-name" href="assets/community-05-quick-start.png">05 / Quick start PNG</a><span class="asset-meta">1920 × 1080 / upload file</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-06-critique.png" alt="Raster upload of the structured critique method"></div><figcaption><a class="asset-name" href="assets/community-06-critique.png">06 / Critique PNG</a><span class="asset-meta">1920 × 1080 / upload file</span></figcaption></figure>
+          <figure><div class="asset-frame"><img src="assets/community-07-before-after.png" alt="Raster upload of one controlled comparison, marked as not statistical validation"></div><figcaption><a class="asset-name" href="assets/community-07-before-after.png">07 / Controlled comparison PNG</a><span class="asset-meta">1920 × 1080 / upload file</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="template-title">
+        <div class="section-heading">
+          <h2 id="template-title">Case-study capture</h2>
+          <p>This blank template remains available for future studies. The completed controlled example above uses real exported outputs.</p>
+        </div>
+        <div class="template-warning">TEMPLATE — NO RESULTS SHOWN</div>
+        <figure>
+          <div class="asset-frame"><img src="assets/before-after-template.svg" alt="Empty same-brief comparison template clearly marked as showing no results"></div>
+          <figcaption><a class="asset-name" href="assets/before-after-template.svg">before-after-template.svg</a><span class="asset-meta">1920 × 1080 / empty capture areas</span></figcaption>
+        </figure>
+      </section>
+
+      <section aria-labelledby="gate-title">
+        <div class="section-heading">
+          <h2 id="gate-title">Figma and external-channel gates</h2>
+          <p>Resolve each input before publishing to its affected channel. These items do not gate an independently authorized GitHub distribution.</p>
+        </div>
+        <ul class="gate-list">
+          <li><strong>Community update</strong><span>Reconfirm the current unpublished draft, image order, and final publish action.</span></li>
+          <li><strong>Runtime recheck</strong><span>Reconfirm command visibility and the current Figma publishing surface.</span></li>
+          <li><strong>Comparison review</strong><span>Approve the mixed, single-run interpretation without stronger claims.</span></li>
+          <li><strong>Support route</strong><span>Confirm strangers can submit sanitized feedback.</span></li>
+          <li><strong>Gallery persistence</strong><span>Do not infer that the complete seven-image draft or asset 07 currently persists.</span></li>
+          <li><strong>External copy</strong><span>Adapt to current channel rules and authorize each account.</span></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>Product Design Director · independent open-source project</span>
+      <a href="assets/README.md">Asset usage and export notes</a>
+    </footer>
+  </body>
+</html>
