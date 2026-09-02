@@ -1,6 +1,8 @@
 # Product Design Director launch pack
 
-> **HUMAN-REVIEWED SOURCE MATERIAL.** Nothing in this directory records an external publication. Resolve every required variable, evidence gate, account authorization, and channel rule immediately before use.
+> **HUMAN-REVIEWED SOURCE MATERIAL.** Nothing in this directory alone proves an external publication. Resolve the variables, evidence gates, account authorization, and channel rules that apply to the channel being used.
+
+GitHub distribution is independent of Figma Community and external social publication. An authorized GitHub workflow may merge repository changes, update GitHub metadata, create a tag, and publish a GitHub Release without resolving Figma gallery or external-channel variables. Nothing here authorizes those excluded channels.
 
 ## Canonical variables
 
@@ -31,12 +33,12 @@ Missing inputs and acceptance evidence are centralized in [`human-input-required
 - [`metrics-template.csv`](metrics-template.csv) — empty channel measurement schema
 - [`link-matrix.csv`](link-matrix.csv) — draft campaign-link matrix
 - [`case-study-capture-guide.md`](case-study-capture-guide.md) — fixed-variable comparison protocol
-- [`github-metadata-plan.md`](github-metadata-plan.md) — read-only baseline and unexecuted metadata commands
-- [`release-draft.md`](release-draft.md) — unexecuted release source copy
+- [`github-metadata-plan.md`](github-metadata-plan.md) — exact GitHub metadata and tag/Release boundary
+- [`release-draft.md`](release-draft.md) — reviewed `v1.0.1` GitHub Release notes source
 - [`assets/README.md`](assets/README.md) — gallery file purpose and publication gates
 - [`preview.html`](preview.html) — offline visual review page
 
-## Execution order
+## Figma Community and external-channel execution order
 
 1. Approve the product name, technical skill name, affiliation statement, and claims ledger.
 2. Run and document a reproducible Figma import-and-invocation test.
@@ -47,4 +49,4 @@ Missing inputs and acceptance evidence are centralized in [`human-input-required
 7. Obtain explicit authorization for the exact account and publication action.
 8. Record the final URL in `link-matrix.csv` and real observations in `metrics-template.csv` after publication.
 
-Stop if a link, result, channel rule, account, image, or capability claim cannot be verified.
+Stop the affected Figma or external-channel publication if a required link, result, channel rule, account, image, or capability claim cannot be verified. These gates do not block an independently authorized GitHub-only distribution.

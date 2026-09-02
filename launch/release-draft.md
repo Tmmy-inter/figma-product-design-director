@@ -1,65 +1,54 @@
-# Release draft
+# Product Design Director v1.0.1
 
-> **SOURCE DRAFT — NOT A RELEASE.** Version, tag, publication, and final links require human authorization.
+## What this is
 
-## Release title
+Product Design Director is an open-source, standalone Figma Custom Skill that provides structured direction for product context, visual systems, hierarchy, layout, component states, responsive behavior, interaction, motion, accessibility review, and critique.
 
-Product Design Director v1.0.1 — distribution and documentation pack
+## Figma Community listing
 
-## Version recommendation
+Product Design Director is available on [Figma Community](https://www.figma.com/community/skill/77880/figma-product-design-director). The repository may contain newer open-source revisions than the currently published Community version.
 
-`v1.0.1` is a candidate because the proposed release adds packaging, truthful installation guidance, examples, launch assets, and governance while preserving the existing product-design instruction body. The final version remains a human decision. Do not move the existing `v1.0.0` tag.
+## Actual slash command
 
-## What it is
+Invoke the Skill with:
 
-Product Design Director is a standalone Custom Skill that provides structured direction for product context, visual systems, hierarchy, layout, component states, responsive behavior, interaction, motion, accessibility review, and critique in Figma.
-
-## Included files
-
-- `SKILL.md` with Agent Skills frontmatter and the product-design instructions
-- Product README and five copyable usage examples
-- Editable social and Community SVG assets plus an offline preview
-- Channel-specific launch-source drafts and measurement templates
-- Claims, case-study, contribution, issue, security, and release-review guidance
-
-## Installation and usage
-
-Upload `SKILL.md` through Figma's custom-skill flow. After a successful import, invoke `/figma-product-design-director` and supply the product goal, users, primary task, content, constraints, and authoritative references.
-
-The repository records an in-place migration, normalized export verification, actual slash command, successful minimum invocation, and one controlled paired Figma Design agent run dated 2026-09-01. Follow the current instructions in `README.md` and report failures with sanitized evidence.
-
-## Current limitations
-
-- Output is non-deterministic and depends on supplied context and agent execution.
-- Accessibility direction requires implementation-level and human validation.
-- The existing Community URL is verified, but the public page still serves the prior version and the final update remains unpublished.
-- The bundled same-brief case study is one non-deterministic observed example, not statistical validation or strict causal proof.
-- Neither observed mobile output visibly preserved every supplied secondary item in the exported frame.
-- The Figma upload is one standalone Markdown file; repository examples and assets are separate references.
-
-## Feedback channels
-
-- Source: `{{GITHUB_REPOSITORY_URL}}`
-- Support: `{{SUPPORT_URL}}`
-- Community listing: `{{FIGMA_COMMUNITY_URL}}`
-
-## Upgrade notes
-
-The existing instruction body is preserved. The display heading changes from “Figma Product Design Director” to “Product Design Director,” and required frontmatter defines the technical name `figma-product-design-director`.
-
-## Known issues
-
-- The existing Community listing update remains pending final human review and explicit authorization for the final `Publish` action shown by the current UI.
-- Gallery asset 07 contains real synthetic runtime outputs; it must retain its observed-example and non-statistical-validation disclaimer.
-
-## Existing version history
-
-The annotated `v1.0.0` tag points to `506324c3555878c0868ef04daacc7d33ee5dde01`. The public GitHub repository currently shows no GitHub Release. Because that tag predates this distribution pack, it must not be described as containing these files.
-
-## Draft publication command
-
-Do not run before tag, reviewed head, notes, and authorization are confirmed. The separately authorized `v1.0.1` tag must already exist on the remote and point to the exact reviewed commit; `--verify-tag` prevents this command from creating a tag from the current default branch.
-
-```sh
-gh release create v1.0.1 --repo Tmmy-inter/figma-product-design-director --verify-tag --title "Product Design Director v1.0.1 — distribution and documentation pack" --notes-file launch/release-draft.md --draft
+```text
+/figma-product-design-director
 ```
+
+## What is included
+
+- The standalone `SKILL.md` instruction file
+- A product-oriented README and copyable usage examples
+- A controlled paired-run case study with its evidence boundaries
+- GitHub issue and pull-request templates
+- Contribution, security, support, claims, release, and distribution guidance
+- Editable SVG launch assets and reviewed raster derivatives
+
+## Quick start
+
+1. Download [`SKILL.md`](https://github.com/Tmmy-inter/figma-product-design-director/releases/download/v1.0.1/SKILL.md).
+2. Add the file through a Figma surface that supports Custom Skills.
+3. Review the imported name, description, and instructions.
+4. Invoke `/figma-product-design-director`, then provide the product goal, users, primary task, content, constraints, and authoritative references.
+5. Review the resulting frames, states, and critique with product and implementation evidence.
+
+## Controlled case study
+
+The repository includes one observed paired run using the same visible runtime configuration, starting frame, redesign brief, and target frames, with Skill invocation as the planned variable. Runtime execution is non-deterministic, and the observed result was mixed: the Skill-assisted output preserved more desktop content, while the control exposed more secondary links in the mobile frame. This single pair is not statistical or causal validation.
+
+## Limitations
+
+- Human design review remains necessary; the Skill does not guarantee better or correct output.
+- The underlying model identifier was not exposed by the verified Figma Design agent UI.
+- Accessibility guidance is not conformance evidence. Implementation-level validation, relevant assistive-technology testing, and human review are still required.
+- Neither observed mobile output visibly preserved every supplied secondary item within the exported frame.
+- Figma imports the standalone Markdown Skill; repository examples and launch assets are separate references.
+
+## Support
+
+Report instruction, runtime, documentation, or feature issues through [GitHub Issues](https://github.com/Tmmy-inter/figma-product-design-director/issues). Remove private product data and secrets before sharing prompts, references, logs, or screenshots.
+
+## License
+
+Released under the [MIT License](https://github.com/Tmmy-inter/figma-product-design-director/blob/v1.0.1/LICENSE). This is an independent open-source project and is not presented as an official Figma product.

@@ -2,7 +2,7 @@
 
 This changelog records repository changes that can be confirmed from Git history or the current reviewed diff. It does not record unverified product outcomes.
 
-## Unreleased
+## v1.0.1 — 2026-09-02
 
 ### Added
 
@@ -16,7 +16,7 @@ This changelog records repository changes that can be confirmed from Git history
 
 - Added Agent Skills frontmatter to `SKILL.md` and aligned the display heading with Product Design Director.
 - Replaced unsupported Community-publication and output-quality language with bounded capability and limitation statements.
-- Recorded the existing canonical Community URL as an update-pending listing; no public update was made.
+- Recorded the existing canonical Community listing without claiming Community/repository revision parity; no Figma Community mutation is part of this GitHub release.
 
 ## v1.0.0 — 2026-08-17
 

@@ -4,7 +4,7 @@
   <rect width="1920" height="1080" fill="#F6F3EC"/>
   <path d="M96 64h72" stroke="#B83A2D" stroke-width="8"/>
   <text x="96" y="126" fill="#171A1F" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="700">One controlled comparison</text>
-  <text x="96" y="178" fill="#545D68" font-family="Arial, Helvetica, sans-serif" font-size="25">Same starting frame · Same model · Same redesign brief · Skill invocation as the planned variable</text>
+  <text x="96" y="178" fill="#545D68" font-family="Arial, Helvetica, sans-serif" font-size="25">Same starting frame · Same visible runtime configuration · Same redesign brief · Skill invocation as the planned variable</text>
 
   <g aria-label="Control output">
     <text x="96" y="242" fill="#171A1F" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">CONTROL</text>

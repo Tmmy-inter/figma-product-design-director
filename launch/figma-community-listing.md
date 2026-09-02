@@ -1,6 +1,6 @@
 # Figma Community listing source
 
-> **IN-PLACE UPDATE SOURCE — DO NOT PUBLISH YET.** The existing canonical listing is `https://www.figma.com/community/skill/77880/figma-product-design-director`. Runtime migration and invocation are verified, but the public page still contains the prior version and the final publication action (`Publish` in the observed UI) remains human-gated.
+> **IN-PLACE UPDATE SOURCE — DO NOT PUBLISH YET.** The existing canonical listing is `https://www.figma.com/community/skill/77880/figma-product-design-director`. Runtime migration and invocation are verified, but a later live reinspection did not confirm that the complete seven-image unpublished draft persisted. Current draft completeness and asset 07 placement remain unverified. This Figma-only state does not gate GitHub distribution.
 
 ## Product name
 
@@ -82,9 +82,9 @@ Try it on one real, sanitized interface and report where the instructions fail, 
 - [x] Save the repository `SKILL.md` instructions in place to the existing personal canonical skill and export the result.
 - [x] Record the actual `/figma-product-design-director` command and a successful minimum invocation.
 - [x] Run one controlled paired prompt and retain first-completed outputs, failures, corrections, environment, and date.
-- [x] Confirm the Community title, tagline, description, category, tags, image slots, and support field in the live update interface.
+- [ ] Reconfirm the current Community title, tagline, description, category, tags, image slots, and support field in the live update interface.
 - [x] Export all seven images at 1920 × 1080 and inspect the controlled-comparison derivative.
-- [x] Check the prepared gallery's crop safety, text wrapping, spelling, and controlled-example disclaimer in the live preview.
+- [ ] Reconfirm the complete gallery upload, order, crop safety, text wrapping, spelling, and controlled-example disclaimer in the live preview.
 - [x] Mark the generated-interface comparison as an observed example rather than statistical validation.
 - [ ] Resolve variables and test every link while signed out.
 - [ ] Obtain explicit authorization for the publisher account and publication action.

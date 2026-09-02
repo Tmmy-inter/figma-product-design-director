@@ -2,9 +2,9 @@
 
 An open-source Custom Skill for structured product-design direction in Figma: visual systems, hierarchy, task-led layout, component states, responsive behavior, interaction, motion, accessibility review, and critique.
 
-[Read the Skill](SKILL.md) · [Explore copyable examples](examples/README.md) · [Review the controlled case study](examples/case-study-01-support-operations-workspace.md) · [Review current limitations](#current-limitations)
+[View on Figma Community](https://www.figma.com/community/skill/77880/figma-product-design-director) · [Read SKILL.md](SKILL.md) · [Explore examples](examples/README.md)
 
-> **Existing Community update pending.** Runtime invocation of the repository version was verified on 2026-09-01. The [existing Community listing](https://www.figma.com/community/skill/77880/figma-product-design-director) still serves its prior public version; an in-place update is pending final publication review.
+> Product Design Director is available on [Figma Community](https://www.figma.com/community/skill/77880/figma-product-design-director). The repository may contain newer open-source revisions than the currently published Community version.
 
 ![Product Design Director — structured product-design direction for AI-assisted interface work](assets/social-preview.svg)
 
@@ -106,7 +106,7 @@ Runtime evidence is retained under [`evidence/r2/`](evidence/r2/), including the
 - Final results depend on the supplied context, references, content, model behavior, and agent execution.
 - Accessibility guidance still requires implementation-level validation, assistive-technology testing where relevant, and human review.
 - Product, brand, legal, and release decisions remain human responsibilities.
-- The existing Community URL is verified, but its public page still contains the prior version; the repository version is not live there until a human completes final publication review.
+- Product Design Director is available on Figma Community; the repository may contain newer open-source revisions than the currently published Community version.
 - The included controlled comparison is one observed, non-deterministic paired run, not statistical validation or strict causal proof.
 - The Figma Design agent UI used for verification did not expose the underlying model name or allow a model switch.
 - Neither observed mobile output visibly preserved every supplied secondary item within the 390 x 844 exported frame.

@@ -1,43 +1,48 @@
-# GitHub metadata plan
+# GitHub metadata target for v1.0.1
 
-> **SOURCE PLAN — NOT EXECUTED.** Every command below changes online repository state and requires separate human authorization.
+This file records the exact GitHub-only repository metadata target for the `v1.0.1` distribution. It does not authorize or require any Figma mutation or external social post.
 
-## Read-only baseline inspected on 2026-09-01
+## Repository
 
-- Repository name: `figma-product-design-director`
-- Canonical remote slug: `Tmmy-inter/figma-product-design-director`
+- Name: `figma-product-design-director`
+- Canonical slug: `Tmmy-inter/figma-product-design-director`
 - Visibility: public
-- Current description: `Open-source Figma AI Custom Skill for product design direction, visual systems, interaction, motion, and critique.`
-- Current homepage: not set
-- Current topics: `ai-agent`, `design-system`, `figma`, `figma-ai`, `figma-skills`, `product-design`, `prompt-engineering`, `ui-design`, `ux-design`
-- Tags: annotated `v1.0.0`
-- GitHub Releases: none
-- Current social preview: GitHub-generated default; proposed upload source is `assets/social-preview.png`
+- Default branch: `main`
 
-`gh repo view` was unavailable because the local CLI is not authenticated. The public GitHub repository page was inspected read-only instead.
+## Target metadata
 
-## Proposed metadata
-
-- Description: `Open-source Custom Skill for structured product-design direction in Figma: hierarchy, layout, states, responsive behavior, accessibility review, and critique.`
-- Homepage: verified `{{FIGMA_COMMUNITY_URL}}`; leave empty until that URL exists
-- Topics: `figma`, `figma-agent`, `custom-skill`, `product-design`, `ui-design`, `design-system`, `design-critique`, `accessibility`, `responsive-design`, `prompt-engineering`
+- Description: `Open-source Figma AI Custom Skill for product design direction, visual systems, interaction, responsive behavior, accessibility review, and critique.`
+- Homepage: `https://www.figma.com/community/skill/77880/figma-product-design-director`
+- Topics:
+  - `figma`
+  - `figma-ai`
+  - `figma-agent`
+  - `figma-skills`
+  - `custom-skill`
+  - `product-design`
+  - `ui-design`
+  - `ux-design`
+  - `design-system`
+  - `design-critique`
+  - `accessibility`
+  - `responsive-design`
+  - `prompt-engineering`
+  - `ai-agent`
 - Social preview: `assets/social-preview.png` at 1280 × 640
 
-The proposed topics describe the current instruction scope. They do not claim adoption, certification, or implementation compliance.
+These values describe the instruction scope and verified public destinations. They do not claim adoption, certification, accessibility conformance, or measured outcome improvement.
 
-## Exact commands for later review
-
-Do not run these commands until the exact values and online action are authorized.
+## CLI metadata update
 
 ```sh
-gh repo edit Tmmy-inter/figma-product-design-director --description "Open-source Custom Skill for structured product-design direction in Figma: hierarchy, layout, states, responsive behavior, accessibility review, and critique."
-gh repo edit Tmmy-inter/figma-product-design-director --homepage "{{FIGMA_COMMUNITY_URL}}"
-gh repo edit Tmmy-inter/figma-product-design-director --remove-topic ai-agent --remove-topic figma-ai --remove-topic figma-skills --remove-topic ux-design
-gh repo edit Tmmy-inter/figma-product-design-director --add-topic figma --add-topic figma-agent --add-topic custom-skill --add-topic product-design --add-topic ui-design --add-topic design-system --add-topic design-critique --add-topic accessibility --add-topic responsive-design --add-topic prompt-engineering
+gh repo edit Tmmy-inter/figma-product-design-director --description "Open-source Figma AI Custom Skill for product design direction, visual systems, interaction, responsive behavior, accessibility review, and critique." --homepage "https://www.figma.com/community/skill/77880/figma-product-design-director"
+gh repo edit Tmmy-inter/figma-product-design-director --add-topic figma --add-topic figma-ai --add-topic figma-agent --add-topic figma-skills --add-topic custom-skill --add-topic product-design --add-topic ui-design --add-topic ux-design --add-topic design-system --add-topic design-critique --add-topic accessibility --add-topic responsive-design --add-topic prompt-engineering --add-topic ai-agent
 ```
 
-GitHub CLI does not provide the planned social-preview upload here. After authorization, upload `assets/social-preview.png` through **Settings → General → Social preview**, then inspect the signed-out repository page.
+Upload `assets/social-preview.png` through **Settings → General → Social preview** when the GitHub web interface permits it. Failure to upload the social preview is a metadata follow-up and does not block the merged branch, tag, or GitHub Release.
 
-## Release strategy
+## Release boundary
 
-Do not move or recreate `v1.0.0`. After the distribution commit is reviewed, choose whether to create a new `v1.0.1` tag for documentation/distribution changes. Create a GitHub Release only from the exact authorized tag and reviewed commit.
+- Preserve the existing annotated `v1.0.0` tag.
+- Create a new annotated `v1.0.1` tag only on the final merged `main` commit.
+- Publish the GitHub Release from that exact tag with `SKILL.md` and a checksum file generated from the uploaded asset bytes.

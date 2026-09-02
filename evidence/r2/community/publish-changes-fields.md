@@ -1,5 +1,7 @@
 # Existing Community Skill update fields
 
+> **Historical evidence from 2026-09-01.** A later 2026-09-02 live reinspection did not confirm that the complete unpublished gallery draft persisted. This file records fields observed in the earlier session; it does not establish current draft completeness or block GitHub distribution.
+
 ## Target and state
 
 - **Canonical Community URL:** `https://www.figma.com/community/skill/77880/figma-product-design-director`

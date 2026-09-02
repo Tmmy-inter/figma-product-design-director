@@ -28,7 +28,7 @@ What I would value most: a real, sanitized interface where the skill fails, over
 
 ## Evidence-backed version — publication still gated
 
-I ran the same product brief twice: once without the skill and once with `/figma-product-design-director`. I kept the content, references, model, target frames, and constraints fixed. The full method, screenshots, failures, and human corrections are here: `{{CASE_STUDY_URL}}`.
+I ran the same product brief twice: once without the skill and once with `/figma-product-design-director`. I kept the content, references, visible runtime configuration, target frames, and constraints fixed. The full method, screenshots, failures, and human corrections are here: `{{CASE_STUDY_URL}}`.
 
 The skill does not guarantee a better result. It adds a structured pass for context, hierarchy, layout selection, visual-system direction, component states, responsive priority, interaction, motion, accessibility review, and critique. In the study, I report observed differences rather than treating one run as causal proof.
 

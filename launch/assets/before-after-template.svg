@@ -16,16 +16,16 @@
   <text x="112" y="358" class="mono" fill="#B83A2D" font-size="24">WITHOUT SKILL</text>
   <rect x="112" y="392" width="790" height="446" class="line" stroke-dasharray="16 12"/>
   <text x="507" y="604" class="sans muted" font-size="32" text-anchor="middle">INSERT REAL BASELINE CAPTURE</text>
-  <text x="507" y="652" class="mono muted" font-size="22" text-anchor="middle">DATE · FIGMA SURFACE · MODEL · RUN ID</text>
+  <text x="507" y="652" class="mono muted" font-size="22" text-anchor="middle">DATE · FIGMA SURFACE · VISIBLE RUNTIME · RUN ID</text>
 
   <text x="1018" y="358" class="mono" fill="#B83A2D" font-size="24">WITH SKILL</text>
   <rect x="1018" y="392" width="790" height="446" class="line" stroke-dasharray="16 12"/>
   <text x="1413" y="604" class="sans muted" font-size="32" text-anchor="middle">INSERT REAL SKILL-ASSISTED CAPTURE</text>
-  <text x="1413" y="652" class="mono muted" font-size="22" text-anchor="middle">DATE · FIGMA SURFACE · MODEL · RUN ID</text>
+  <text x="1413" y="652" class="mono muted" font-size="22" text-anchor="middle">DATE · FIGMA SURFACE · VISIBLE RUNTIME · RUN ID</text>
 
   <line x1="112" y1="900" x2="1808" y2="900" class="line"/>
   <text x="112" y="952" class="sans ink" font-size="27" font-weight="650">Fixed:</text>
-  <text x="206" y="952" class="sans muted" font-size="27">brief · content · references · model · target frames · correction budget</text>
+  <text x="206" y="952" class="sans muted" font-size="27">brief · content · references · visible runtime · target frames · correction budget</text>
   <text x="112" y="1004" class="sans ink" font-size="27" font-weight="650">Record:</text>
   <text x="224" y="1004" class="sans muted" font-size="27">observed differences · failures · human corrections · reproducibility notes</text>
 </svg>

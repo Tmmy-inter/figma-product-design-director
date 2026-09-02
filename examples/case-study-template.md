@@ -7,7 +7,7 @@
 - **Original brief:**
 - **Baseline output:**
 - **Skill-assisted output:**
-- **Fixed variables:** model, product context, content, references, frame sizes, session conditions
+- **Fixed variables:** visible runtime configuration, product context, content, references, frame sizes, session conditions
 - **Changed variable:** whether `/figma-product-design-director` was invoked
 - **Observed differences:**
 - **Failures:**
@@ -15,7 +15,7 @@
 - **Screenshots:** baseline, skill-assisted, detail crops, relevant states
 - **Date:**
 - **Figma version / environment:**
-- **Reproducibility notes:** access level, model, invocation shown, run count, known variability
+- **Reproducibility notes:** access level, visible runtime configuration, invocation shown, run count, known variability
 
 ## Method checks
 

@@ -13,7 +13,7 @@ The comparison can describe differences. One pair of non-deterministic runs cann
 - Original brief, wording, and success criteria
 - Realistic but shareable content and data shape
 - Authoritative Figma frames, screenshots, brand evidence, and assets
-- Model and Figma surface, when shown
+- Visible runtime configuration and Figma surface
 - Target frame sizes and required states
 - Session conditions and connector availability
 - Time budget and number of permitted revisions
@@ -29,7 +29,7 @@ Do not add extra design hints only to one condition.
 ## Run protocol
 
 1. Sanitize the brief and references; record permissions.
-2. Start comparable sessions and record date, Figma surface, model if visible, and access conditions.
+2. Start comparable sessions and record date, Figma surface, visible runtime configuration, and access conditions.
 3. Submit the same brief in both conditions.
 4. Capture the first complete output from each run before human correction.
 5. Record failures, missing states, tool errors, and unsupported assumptions.

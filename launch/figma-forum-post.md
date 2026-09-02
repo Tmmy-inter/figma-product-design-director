@@ -41,4 +41,4 @@ If you test it on a sanitized real interface, I would value failure cases and ov
 
 ## First reply draft
 
-Testing method for anyone comparing runs: keep the brief, content, references, model, and target frames fixed; change only whether the skill is invoked. Please record the Figma surface/date, failures, and human corrections. The blank capture template is at `{{CASE_STUDY_URL}}` only after a real study is published; until then, the repository includes a clearly marked template rather than a claimed result.
+Testing method for anyone comparing runs: keep the brief, content, references, visible runtime configuration, and target frames fixed; change only whether the skill is invoked. Please record the Figma surface/date, failures, and human corrections. The blank capture template is at `{{CASE_STUDY_URL}}` only after a real study is published; until then, the repository includes a clearly marked template rather than a claimed result.

@@ -1,6 +1,6 @@
 # Product Hunt source draft
 
-> **NOT LAUNCH-READY.** The existing Community URL, callable command, dated runtime evidence, controlled comparison, seven-image gallery, and support destination proposal are recorded. The public Community update, final channel URLs, Product Hunt live-interface review, release decision, and publication authorization remain pending.
+> **NOT LAUNCH-READY.** The existing Community URL, callable command, dated runtime evidence, controlled comparison, seven repository gallery assets, and support destination proposal are recorded. Current Figma draft-gallery completeness is not verified. Final channel URLs, Product Hunt live-interface review, and publication authorization remain pending.
 
 ## Name
 
@@ -69,9 +69,9 @@ No. It is an independent open-source project.
 - [ ] Verified Community, repository, support, case-study, and Release URLs
 - [x] Dated Figma migration, command, and representative run evidence
 - [x] Same-brief comparison with failures, retries, and human-correction counts
-- [x] Seven-image Community gallery reviewed for factual accuracy in the existing listing update preview
+- [ ] Reconfirm the complete Community gallery in the current listing update preview; repository assets alone do not prove draft persistence
 - [ ] Product Hunt gallery constraints and current rules reviewed in the live interface
-- [ ] Version and GitHub Release decision approved
+- [x] GitHub `v1.0.1` tag and Release authorized as a separate GitHub-only workflow
 - [ ] Product Hunt listing fields and current rules reviewed in the live interface
 - [ ] Maker identity and exact publication action authorized
 
@@ -79,9 +79,9 @@ Until every box is complete, this file remains source material rather than a lau
 
 ## Remaining launch gates
 
-- Final publication of the existing Community update; the current public page still shows the prior version
+- Reconfirm the current unpublished Community draft and separately authorize any future Figma publication
 - Resolved public source and case-study URLs in this channel draft
 - Product Hunt live-interface preview and current-rule review
 - Optional public demo video decision and, if used, reviewed media
-- Authorized release version and URL
+- Verified public `v1.0.1` GitHub Release URL after the separate GitHub-only workflow completes
 - Maker identity and exact Product Hunt publication authorization

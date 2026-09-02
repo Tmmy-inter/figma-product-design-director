@@ -2,6 +2,7 @@
   "distributionStage": "DISTRIBUTION-R2.1",
   "date": "2026-09-01",
   "timezone": "Asia/Shanghai",
+  "evidenceScope": "Historical 2026-09-01 observation; a later 2026-09-02 live reinspection did not confirm complete seven-image draft persistence.",
   "repositoryBaseline": {
     "worktreeRole": "authorized distribution worktree",
     "branch": "docs/distribution-r1",
@@ -66,7 +67,10 @@
     ]
   },
   "communityDraft": {
-    "status": "FINAL_REVIEW_STEP_REACHED_NOT_PUBLISHED",
+    "status": "HISTORICAL_2026_09_01_FINAL_REVIEW_STEP_REACHED_NOT_PUBLISHED",
+    "currentDraftState": "UNKNOWN_OR_INCOMPLETE_AFTER_2026_09_02_REINSPECTION",
+    "completeSevenImagePersistenceVerified": false,
+    "currentAsset07UploadVerified": false,
     "finalUiActionLabel": "Publish",
     "finalActionClicked": false,
     "publicPageChanged": false,
